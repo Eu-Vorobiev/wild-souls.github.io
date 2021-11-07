@@ -1,0 +1,81 @@
+.hero {
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 40px;
+  height: 850px;
+  position: relative;
+
+  @media (max-width: 1360px) {
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    background-position: center 40px;
+    height: 650px;
+  }
+
+  @media (max-width: 575px) {
+    height: 550px;
+  }
+
+  @media (max-width: 475px) {
+    height: 650px;
+  }
+
+  @media (max-width: 420px) {
+    height: 590px;
+  }
+
+  @media (max-width: 360px) {
+    height: 550px;
+  }
+
+  &__container {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1360px) {
+      padding-top: 240px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 180px;
+    }
+
+    @media (max-width: 575px) {
+      padding-top: 160px;
+    }
+
+    @media (max-width: 475px) {
+      padding-top: 200px;
+    }
+
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 85px;
+    line-height: 1.1;
+    text-align: center;
+    color: $black;
+
+    @media (max-width: 768px) {
+      font-weight: bold;
+      font-size: 62px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 40px;
+    }
+  }
+}

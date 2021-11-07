@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  min-height: 100vh;
+  background: $orange;
+  color: $black;
+  transition: all .3s ease-in-out;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+span {
+  display: inline-flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: all .3s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.logo {
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.section {
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 1.1;
+    color: $black;
+
+    @media (max-width: 1024px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 1023px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 475px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 40px;
+    }
+  }
+}

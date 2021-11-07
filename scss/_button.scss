@@ -1,0 +1,32 @@
+.btn {
+  padding: 16px 42px;
+  background: $black;
+  border: 1px solid $black;
+  border-radius: 36px;
+  box-shadow: 1px 1px 1px transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.1;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: $white;
+
+  &--sm {
+    padding: 11px 47px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $black;
+    border: none;
+  }
+
+  &--thin {
+    padding: 1px 64px;
+  }
+
+
+  &:hover {
+    box-shadow: 2px 2px 4px rgba($black, .8);
+  }
+}

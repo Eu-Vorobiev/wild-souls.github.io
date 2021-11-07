@@ -1,0 +1,43 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 42px;
+
+    @media (max-width: 900px) {
+      margin-right: 15px;
+    }
+
+    @media (max-width: 360px) {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $black;
+    filter: drop-shadow(0px 0px 0px rgba($black, 0%));
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 13px;
+    }
+
+    &:hover {
+      filter: drop-shadow(1px 2px 3px rgba($black, .8))
+    }
+  }
+}
